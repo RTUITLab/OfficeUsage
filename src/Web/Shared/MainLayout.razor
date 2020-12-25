@@ -1,8 +1,19 @@
 @inherits LayoutComponentBase
-<Layout>
+<Layout Style="height: 100%;">
     <Header><Title Style="color: white;">Использование Microsoft Office</Title></Header>
     <Content>
-        @Body
+        <Layout Style="height: 100%;">
+            <Sider>
+                <Menu Theme="@MenuTheme.Dark">
+                    <MenuItem>
+                        Форма
+                    </MenuItem>
+                </Menu>
+            </Sider>
+            <Content>
+                @Body
+            </Content>
+        </Layout>
     </Content>
 </Layout>
 
